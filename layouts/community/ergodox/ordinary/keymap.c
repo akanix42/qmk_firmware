@@ -71,18 +71,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // left hand
  F(LSpec)  ,KC_1           ,KC_2   ,KC_3   ,KC_4  ,KC_5  ,KC_ESC
 ,F(LMdia)  ,KC_Q           ,KC_W   ,KC_E   ,KC_R  ,KC_T  ,KC_LBRC
-,M(LSymb)  ,LT(RBASE, KC_A),KC_S   ,KC_D   ,LT(RBASE, KC_F)  ,KC_G
+,M(LSymb)  ,KC_A           ,KC_S   ,KC_D   ,KC_F  ,KC_G
 ,KC_LSFT   ,KC_Z           ,KC_X   ,KC_C   ,KC_V  ,KC_B  ,LSFT(KC_TAB)
-,KC_LCTL   ,MEH_T(KC_NO)   ,ALL_T(KC_NO),KC_LALT,KC_LGUI
+,KC_LCTL   ,MEH_T(KC_NO)   ,MO(RBASE),KC_LALT,KC_LGUI
                                          ,KC_HOME,KC_END
                                                  ,KC_PGUP
                                  ,KC_BSPC,KC_DEL ,KC_PGDN
                                                                   // right hand
                                                                  ,KC_MINS ,KC_6 ,KC_7           ,KC_8   ,KC_9   ,KC_0             ,F(RSpec)
                                                                  ,KC_RBRC ,KC_Y ,KC_U           ,KC_I   ,KC_O   ,KC_P             ,F(RMdia)
-                                                                          ,KC_H ,LT(RBASE, KC_J),KC_K   ,KC_L   ,LT(RBASE,KC_SCLN),F(RSymb)
+                                                                          ,KC_H ,KC_J           ,KC_K   ,KC_L   ,KC_SCLN          ,F(RSymb)
                                                                  ,KC_TAB  ,KC_N ,KC_M           ,KC_COMM,KC_DOT ,KC_SLSH          ,KC_RSFT
-                                                                                ,KC_RGUI        ,KC_RALT,KC_HYPR,KC_MEH           ,KC_RCTL
+                                                                                ,KC_RGUI        ,KC_RALT,MO(RBASE),KC_MEH           ,KC_RCTL
                                                                  ,KC_LEFT ,KC_RGHT
                                                                  ,KC_UP
                                                                  ,KC_DOWN ,KC_ENT ,KC_SPC
@@ -239,18 +239,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // left hand
  KC_EQL    ,KC_0        ,KC_9   ,KC_8   ,KC_7  ,KC_6  ,KC_MINS
 ,KC_BSLS   ,KC_P        ,KC_O   ,KC_I   ,KC_U  ,KC_Y  ,KC_RBRC
-,KC_QUOT     ,LT(RBASE, KC_SCLN)     ,KC_L   ,KC_K   ,LT(RBASE, KC_J)  ,KC_H
+,KC_QUOT   ,KC_SCLN     ,KC_L   ,KC_K   ,KC_J  ,KC_H
 ,KC_RSFT   ,KC_SLSH     ,KC_DOT ,KC_COMM,KC_M  ,KC_N  ,KC_TAB
-,KC_RCTL   ,MEH_T(KC_NO),ALL_T(KC_NO),KC_RALT,KC_RGUI
+,KC_RCTL   ,MEH_T(KC_NO),MO(RBASE),KC_RALT,KC_RGUI
                                              ,KC_LEFT ,KC_RGHT
                                                       ,KC_UP
                                     ,KC_SPC  ,KC_ENT  ,KC_DOWN
                                                                   // right hand
                                                                  ,KC_ESC      ,KC_5   ,KC_4   ,KC_3   ,KC_2    ,KC_1  ,KC_GRV
                                                                  ,KC_LBRC     ,KC_T   ,KC_R   ,KC_E   ,KC_W    ,KC_Q  ,KC_TAB
-                                                                              ,KC_G   ,LT(RBASE, KC_F),KC_D   ,KC_S   ,LT(RBASE, KC_A)  ,KC_NO
+                                                                              ,KC_G   ,KC_F   ,KC_D   ,KC_S    ,KC_A  ,KC_NO
                                                                  ,LSFT(KC_TAB),KC_B   ,KC_V   ,KC_C   ,KC_X    ,KC_Z  ,KC_LSFT
-                                                                                      ,KC_LGUI,KC_LALT,KC_HYPR ,KC_MEH,KC_LCTL
+                                                                                      ,KC_LGUI,KC_LALT,MO(RBASE),KC_MEH,KC_LCTL
                                                                  ,KC_HOME     ,KC_END
                                                                  ,KC_PGUP
                                                                  ,KC_PGDN     ,KC_BSPC ,KC_DEL
